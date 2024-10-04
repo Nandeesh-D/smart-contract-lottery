@@ -1,0 +1,16 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+
+
+remappings = [
+    "@chainlink/contracts/=lib/chainlink-brownie-contracts/contracts",
+    "@solmate/tokens/=lib/solmate-main/solmate-main/src/tokens",
+]
+
+
+fs_permissions = [
+    { access = "read", path = "./broadcast" },
+    { access = "read", path = "./reports" },
+]
